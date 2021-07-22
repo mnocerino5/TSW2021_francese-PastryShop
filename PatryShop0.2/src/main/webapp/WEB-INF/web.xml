@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>PastryShop0.2</display-name>
+  <welcome-file-list>
+    <welcome-file>Homepage.jsp</welcome-file>
+  </welcome-file-list>
+<resource-ref>
+    <description>PastryShop riferimento alla datasource del suo database</description>
+    <res-ref-name>jdbc/pastryshop_database</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+</resource-ref>
+	<servlet>
+    <servlet-name>RegistrazioneServlet</servlet-name>
+    <servlet-class>pastryshop.control.RegistrazioneServlet</servlet-class>
+  </servlet>
+  
+  <jsp-config>
+    <jsp-property-group>
+        <url-pattern>*.jsp</url-pattern>
+        <page-encoding>UTF-8</page-encoding>
+    </jsp-property-group>
+</jsp-config>
+  
+  <servlet-mapping>
+    <servlet-name>RegistrazioneServlet</servlet-name>
+    <url-pattern>/registrazione</url-pattern>   	
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>pastryshop.control.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>   	
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>pastryshop.control.LogoutServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/logout</url-pattern>   	
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ProdottoServlet</servlet-name>
+    <servlet-class>pastryshop.control.ProdottoServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ProdottoServlet</servlet-name>
+    <url-pattern>/prodotto</url-pattern>   	
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>OrdiniServlet</servlet-name>
+    <servlet-class>pastryshop.control.OrdiniServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>OrdiniServlet</servlet-name>
+    <url-pattern>/ordini</url-pattern>   	
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>OrdiniPageServlet</servlet-name>
+    <servlet-class>pastryshop.control.OrdiniPageServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>OrdiniPageServlet</servlet-name>
+    <url-pattern>/ordinipage</url-pattern>   	
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GetPictureServlet</servlet-name>
+    <servlet-class>pastryshop.control.GetPictureServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>GetPictureServlet</servlet-name>
+    <url-pattern>/getPicture</url-pattern>   	
+  </servlet-mapping>
+</web-app>

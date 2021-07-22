@@ -1,0 +1,89 @@
+@charset "ISO-8859-1";
+
+body{
+	background-image: url("../img/Sfondo-Homepage.png");
+	background-size: cover;
+}
+.cart-page{
+	width:80%;
+	margin:80px auto;
+}
+.tab-cart{
+	width:100%;
+	border-collapse: collapse;
+}
+.cart-info{
+	display:flex;
+	flex-wrap:wrap;
+	background-color:#f5cdcd;
+}
+th{
+	text-align:center;
+	padding:5px;
+	color: #fff;
+	background:#7F7F7F;
+	font-weight:normal;
+}
+
+.put-left{
+	width:80%;
+	text-align:left;
+}
+.put-center{
+	width:10%;
+}
+.put-right{
+	width:10%;
+}
+td{
+	padding:10px 5px;
+	
+}
+td a{
+	font-size:12px;
+}
+.prezzo-quantita{
+	text-align:center;
+}
+td img{
+	width:161.5px;
+	margin-right:10px;
+}
+
+.total-price{
+	display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+	border-top: 3px solid #7F7F7F;
+	width:100%;
+	max-width:350px;
+	
+}
+td:last-child{
+	text-align:right;
+}
+th:last-child{
+	text-align:right;
+}
+.cart-empty{
+	margin-top:80px;
+}
+.details-left a{
+	color:red;
+}
+
+/*Media query minore di 600px*/
+@media (max-width: 1024px) {
+	
+	td img{
+	width:232px;
+	margin-right:10px;
+	}
+	td{
+	padding:10px 5px;
+	font-size:24px;
+	}
+}
+
+

@@ -1,0 +1,99 @@
+@charset "ISO-8859-1";
+
+body{
+	padding-top:80px;
+	background-image: url("../img/Sfondo-Homepage.png");
+
+}
+.container-section{
+	width:17%;
+	min-height:300px;
+	box-shadow: 0 50px 50px 0 rgba(0,0,0,0.5);
+	transition:0.3s;
+	margin:1%;
+	display: inline-block;
+	background-color: white;
+}
+
+.container-add-cart{
+	background: pink;
+}
+img{
+	width:100%;
+	height:auto;
+}
+
+.crop{
+	width:100%;
+	min-height:100px;
+	text-align:center;
+}
+.crop-override{	
+	
+	min-height:40px;
+}
+.container-link{
+	padding: 1em;
+}
+
+.title1{
+	text-align:center;
+	padding-top: 25px;
+	font-size:2.5em;
+}
+.section-lievitati{
+	text-align:center;
+}
+.section-torte{
+	text-align:center;
+}
+.section-colazione{
+	text-align:center;
+}
+.section-mignon{
+	text-align:center;
+}
+
+.container-delete-cart a{
+color: red;
+}
+
+
+
+.admin-part {
+	text-align:center;
+}
+
+
+
+.admin-part input, .admin-part select{
+	border-radius: 5px;
+	font-size: 15px;
+	height: 25px;
+	background-color: #e5dddd;
+	font-weight: bold;
+
+}
+
+
+
+.admin-part textarea{
+	background-color: #e5dddd;
+	width:200px;
+	height: 100px;
+	font-weight: bold;
+
+}
+
+
+
+.admin-part-pad{
+	padding:40px 0px;
+}
+
+@media (max-width:1024px){
+	.container-section{
+		width:34%;
+	}
+
+	}
